@@ -9,6 +9,12 @@ header p{
   color: #7B7B7B;
 }
 .selected{
-  font-style: bold;
+  font-weight: bold;
   color: #333333;
+}
+footer{
+  background-color: #0a0a0a;
+}
+footer p{
+  color: white;
 }
