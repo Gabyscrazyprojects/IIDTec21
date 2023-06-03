@@ -41,6 +41,9 @@ form{
 input{
   margin-bottom: 5px;
 }
+select{
+  margin-bottom: 5px;
+}
 button{
   margin-top: 20px;
   background-color: #27A0B7;
