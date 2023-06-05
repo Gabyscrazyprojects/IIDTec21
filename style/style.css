@@ -70,10 +70,20 @@ button{
 .Revertir-cambios:hover{
   background-color: #825F1B;
 }
+ul li { 
+  display: inline; 
+}
+ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+text-align: center;
+}
 ul.planDeEstudios {
   display: inline-flex;
   margin-top: 5px;
   white-space: nowrap;
+  align-content: start;
 }
 .carousel-indicators, .planDeEstudios ul, ul.planDeEstudios {
   list-style: none;
@@ -84,8 +94,7 @@ ul.PlanDeEstudios li{
 h2{
   text-align: center;
 }
-.materiaFija{
-  background-color: #335CB5;
+.materiaTronco, .materiaAreaEstudios, .materiaConcentracion, .materiaUltimoSemestre, .materiaFija{
   color: white;
   border: 1px solid;
   border-color: white;
@@ -93,6 +102,157 @@ h2{
   padding-left: 10px;
   padding-right: 10px;
   text-align: center;
+  min-width: 50px;
+  max-width: 100px;
+}
+.materiaTronco, .materiaFija{
+    background-color: #335CB5;
+}
+.materiaAreaEstudios{
+  background-color: #2AB77E;
+}
+.materiaConcentracion{
+  background-color: #D29B2D;
+}
+.materiaUltimoSemestre{
+  background-color: #309FB6;
+}
+footer{
+  background-color: #0a0a0a;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+footer p{
+  color: white;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-right: 10px
+}
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }header{
+  background-color: #E5E5E5;
+}
+body{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header a{
+  color: #7B7B7B;
+  margin-right: 5px;
+}
+header{
+  position: fixed; 
+  top: 0;
+  margin-top: 0px; 
+  width: 100%;
+  z-index: 2;
+}
+header img{
+  padding-left: 1%;
+}
+nav {float: right; 
+  margin-top: 1%; 
+  margin-right: 5%;
+  margin-left: 0px;
+}
+.selected{
+  font-weight: bold;
+  color: #333333;
+}
+h1 {
+  margin-top: 70px;
+  text-align: center;
+  color: #999999;
+  font-weight: normal;
+}
+button{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.Agregar-periodo{
+  background-color: #27A0B7;
+  color: white;
+  border-radius: 20px;
+  border: 0px;
+  padding: 10px;
+}
+.Agregar-periodo:hover {
+  background-color: #155B68;
+}
+.Guardar-cambios{
+  background-color: #2AB77E;
+  color: white;
+  border-radius: 20px;
+  border: 0px;
+  padding: 10px;
+  float: right;
+}
+.Guardar-cambios:hover{
+  background-color: #196D4B;
+}
+.Revertir-cambios{
+  background-color: #D29B2D;
+  color: white;
+  border-radius: 20px;
+  border: 0px;
+  padding: 10px;
+  float: right;
+}
+.Revertir-cambios:hover{
+  background-color: #825F1B;
+}
+ul li { 
+  display: inline; 
+}
+ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+text-align: center;
+}
+ul.planDeEstudios {
+  display: inline-flex;
+  margin-top: 5px;
+  white-space: nowrap;
+  align-content: start;
+}
+.carousel-indicators, .planDeEstudios ul, ul.planDeEstudios {
+  list-style: none;
+}
+ul.PlanDeEstudios li{
+  display: inline-block;
+}
+h2{
+  text-align: center;
+}
+.materiaTronco, .materiaAreaEstudios, .materiaConcentracion, .materiaUltimoSemestre, .materiaFija{
+  color: white;
+  border: 1px solid;
+  border-color: white;
+  border-radius: 9px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  min-width: 50px;
+  max-width: 100px;
+}
+.materiaTronco, .materiaFija{
+    background-color: #335CB5;
+}
+.materiaAreaEstudios{
+  background-color: #2AB77E;
+}
+.materiaConcentracion{
+  background-color: #D29B2D;
+}
+.materiaUltimoSemestre{
+  background-color: #309FB6;
 }
 footer{
   background-color: #0a0a0a;
