@@ -30,12 +30,13 @@
             </div>
           <div>
             <ul class="PlanDeEstudios">
+              
             <!-- ngRepeat: periodo in periodos -->
               <li class="periodoagosto-diciembre" ng-repeat="periodo in periodos" info="periodo" ingreso="ingreso">
                 <h2 class="center ng binding">AD2021</h2>
                 <!-- ngRepeat: materia in periodo.materias -->
                 <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
-                  <li class="materiaFija" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                  <li class="materiaTronco" ng-repeat="materia in periodo.materas" info="materia" index="$index">
                     <p class="clave">
                       <a class="ng-binding" ng-click="editar()">EG1001</a>
                     </p>
@@ -45,70 +46,326 @@
                 </ul>
                 <!-- ngRepeat: materia in periodo.materias -->
                 <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
-                  <li class="materiaFija" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                  <li class="materiaTronco" ng-repeat="materia in periodo.materas" info="materia" index="$index">
                     <p class="clave">
-                      <a class="ng-binding" ng-click="editar()">EG1001</a>
+                      <a class="ng-binding" ng-click="editar()">F1001B</a>
                     </p>
-                    <p class="nombre ng-binding">Optativa de matemáticas y ciencias</p>
+                    <p class="nombre ng-binding">Modelación de la ingeniería y ciencias</p>
                     <p class="unidades ng-binding" ng-show="materia.unidades">U: 3</p>
                   </li>
                 </ul>
                 <!-- ngRepeat: materia in periodo.materias -->
                 <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
-                  <li class="materiaFija" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                  <li class="materiaTronco" ng-repeat="materia in periodo.materas" info="materia" index="$index">
                     <p class="clave">
-                      <a class="ng-binding" ng-click="editar()">EG1001</a>
+                      <a class="ng-binding" ng-click="editar()">F1006B</a>
                     </p>
-                    <p class="nombre ng-binding">Optativa de matemáticas y ciencias</p>
+                    <p class="nombre ng-binding">Modelación del movimiento en ingeniería</p>
                     <p class="unidades ng-binding" ng-show="materia.unidades">U: 3</p>
                   </li>
                 </ul>
                 <!-- ngRepeat: materia in periodo.materias -->
                 <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
-                  <li class="materiaFija" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                  <li class="materiaTronco" ng-repeat="materia in periodo.materas" info="materia" index="$index">
                     <p class="clave">
-                      <a class="ng-binding" ng-click="editar()">EG1001</a>
+                      <a class="ng-binding" ng-click="editar()">F1007B</a>
                     </p>
-                    <p class="nombre ng-binding">Optativa de matemáticas y ciencias</p>
+                    <p class="nombre ng-binding">Aplicación de las leyes de conservación en sistemas ingenieriles</p>
                     <p class="unidades ng-binding" ng-show="materia.unidades">U: 3</p>
                   </li>
                 </ul>
                 <!-- ngRepeat: materia in periodo.materias -->
                 <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
-                  <li class="materiaFija" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                  <li class="materiaTronco" ng-repeat="materia in periodo.materas" info="materia" index="$index">
                     <p class="clave">
-                      <a class="ng-binding" ng-click="editar()">EG1001</a>
+                      <a class="ng-binding" ng-click="editar()">MA1028</a>
                     </p>
-                    <p class="nombre ng-binding">Optativa de matemáticas y ciencias</p>
-                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 3</p>
+                    <p class="nombre ng-binding">Modelación matemática fundamental</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 2</p>
                   </li>
                 </ul>
                 <!-- ngRepeat: materia in periodo.materias -->
                 <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
-                  <li class="materiaFija" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                  <li class="materiaTronco" ng-repeat="materia in periodo.materas" info="materia" index="$index">
                     <p class="clave">
-                      <a class="ng-binding" ng-click="editar()">EG1001</a>
+                      <a class="ng-binding" ng-click="editar()">Q1019</a>
                     </p>
-                    <p class="nombre ng-binding">Optativa de matemáticas y ciencias</p>
-                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 3</p>
+                    <p class="nombre ng-binding">Análisis de la estructura, propiedades y transformación de la materia</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 2</p>
                   </li>
                 </ul>
                 <!-- ngRepeat: materia in periodo.materias -->
                 <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
-                  <li class="materiaFija" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                  <li class="materiaTronco" ng-repeat="materia in periodo.materas" info="materia" index="$index">
                     <p class="clave">
-                      <a class="ng-binding" ng-click="editar()">EG1001</a>
+                      <a class="ng-binding" ng-click="editar()">TC1028</a>
                     </p>
-                    <p class="nombre ng-binding">Optativa de matemáticas y ciencias</p>
-                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 3</p>
+                    <p class="nombre ng-binding">Pensamiento computacional para ingeniería</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 2</p>
                   </li>
                 </ul>
               </li>
+              
               <!-- ngRepeat: periodo in periodos -->
               <li class="periodofebrero-junio" ng-repeat="periodo in periodos" info="periodo" ingreso="ingreso">
                 <h2 class="center ng binding">FJ2022</h2>
                 <!-- ngRepeat: materia in periodo.materias -->
                 <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaTronco" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">EG1002</a>
+                    </p>
+                    <p class="nombre ng-binding">Optativa de humanidades y bellas artes</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 3</p>
+                  </li>
+                </ul>
+                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaTronco" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">F1008</a>
+                    </p>
+                    <p class="nombre ng-binding">Experimentación física y pensamiento estadístico</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 1</p>
+                  </li>
+                </ul>
+                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaTronco" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">F1015B</a>
+                    </p>
+                    <p class="nombre ng-binding">Aplicación de la termodinámica en sistemas ingenieriles</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 3</p>
+                  </li>
+                </ul>
+                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaTronco" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">F1016B</a>
+                    </p>
+                    <p class="nombre ng-binding">Análisis de sistemas eléctricos en sistemas ingenieriles</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 3</p>
+                  </li>
+                </ul>
+                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaTronco" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">F1017B</a>
+                    </p>
+                    <p class="nombre ng-binding">Análisis de sistemas electromagnéticos en sistemas ingenieriles</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 3</p>
+                  </li>
+                </ul>
+                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaTronco" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">MA1029</a>
+                    </p>
+                    <p class="nombre ng-binding">Modelación matemática intermedia</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 2</p>
+                  </li>
+                </ul>
+                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaTronco" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">MA1031</a>
+                    </p>
+                    <p class="nombre ng-binding">Análisis estadístico</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 1</p>
+                  </li>
+                </ul>
+                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaTronco" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">OP1007</a>
+                    </p>
+                    <p class="nombre ng-binding">Optativa de fundamentos en ingeniería</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 1</p>
+                  </li>
+                </ul>
+                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaTronco" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">Q1021</a>
+                    </p>
+                    <p class="nombre ng-binding">Experimentación química y pensamiento estadístico fundamental</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 1</p>
+                  </li>
+                </ul>
+              </li>
+              
+              <!-- ngRepeat: periodo in periodos -->
+              <li class="periodoagosto-diciembre" ng-repeat="periodo in periodos" info="periodo" ingreso="ingreso">
+                <h2 class="center ng binding">AD2022</h2>
+                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaTronco" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">EG1003</a>
+                    </p>
+                    <p class="nombre ng-binding">Optativa de ciencias sociales y del comportamiento</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 3</p>
+                  </li>
+                </ul>
+                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaTronco" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">IN1001B</a>
+                    </p>
+                    <p class="nombre ng-binding">Diseño y análisis de experimentos para la innovación ingenieril</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 3</p>
+                  </li>
+                </ul>
+                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaTronco" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">IN1002B</a>
+                    </p>
+                    <p class="nombre ng-binding">Desarrollo de proyectos de análisis de datos</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 3</p>
+                  </li>
+                </ul>
+                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaTronco" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">M1011</a>
+                    </p>
+                    <p class="nombre ng-binding">Análisis de equilibrio estático</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 2</p>
+                  </li>
+                </ul>
+                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaTronco" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">MA1034</a>
+                    </p>
+                    <p class="nombre ng-binding">Modelación de procesos mediante algebra lineal</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 1</p>
+                  </li>
+                </ul>
+                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaTronco" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">MA1035</a>
+                    </p>
+                    <p class="nombre ng-binding">Modelación en ingeniería mediante sistemas dinámicos</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 2</p>
+                  </li>
+                </ul>
+                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaTronco" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">TE1020</a>
+                    </p>
+                    <p class="nombre ng-binding">Análisis de circuitos eléctricos</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 1</p>
+                  </li>
+                </ul>
+                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaTronco" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">VA1001B</a>
+                    </p>
+                    <p class="nombre ng-binding">Tópico de exploración</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 3</p>
+                  </li>
+                </ul>
+                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaTronco" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">EG1004</a>
+                    </p>
+                    <p class="nombre ng-binding">Optativa de liderazgo, emprendimiento e innovación</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 3</p>
+                  </li>
+                </ul>
+              </li>
+              
+              <!-- ngRepeat: periodo in periodos Aqui empieza 4to semestre -->
+              <li class="periodofebrero-junio" ng-repeat="periodo in periodos" info="periodo" ingreso="ingreso">
+                <h2 class="center ng binding">FJ2023</h2>
+                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaTronco" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">NN2007</a>
+                    </p>
+                    <p class="nombre ng-binding">Estudio de metodologías para la innovación</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 1</p>
+                  </li>
+                </ul>
+                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaAreaEstudios" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">N/A</a>
+                    </p>
+                    <p class="nombre ng-binding">N/A</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: N/A</p>
+                  </li>
+                </ul>
+                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaAreaEstudios" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">N/A</a>
+                    </p>
+                    <p class="nombre ng-binding">N/A</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: N/A</p>
+                  </li>
+                </ul>
+                                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaAreaEstudios" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">N/A</a>
+                    </p>
+                    <p class="nombre ng-binding">N/A</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: N/A</p>
+                  </li>
+                </ul>
+                                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaAreaEstudios" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">N/A</a>
+                    </p>
+                    <p class="nombre ng-binding">N/A</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: N/A</p>
+                  </li>
+                </ul>
+                                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaAreaEstudios" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">N/A</a>
+                    </p>
+                    <p class="nombre ng-binding">N/A</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: N/A</p>
+                  </li>
+                </ul>
+              </li>
+              
+              <!-- ngRepeat: periodo in periodos -->
+              <li class="periodoagosto-diciembre" ng-repeat="periodo in periodos" info="periodo" ingreso="ingreso">
+                <h2 class="center ng binding">AD2023</h2>
+                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
                   <li class="materiaFija" ng-repeat="materia in periodo.materas" info="materia" index="$index">
                     <p class="clave">
                       <a class="ng-binding" ng-click="editar()">EG1001</a>
@@ -178,9 +435,160 @@
                   </li>
                 </ul>
               </li>
+              
+              <!-- ngRepeat: periodo in periodos -->
+              <li class="periodofebrero-junio" ng-repeat="periodo in periodos" info="periodo" ingreso="ingreso">
+                <h2 class="center ng binding">FJ2024</h2>
+                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaFija" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">EG1001</a>
+                    </p>
+                    <p class="nombre ng-binding">Optativa de matemáticas y ciencias</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 3</p>
+                  </li>
+                </ul>
+                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaFija" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">EG1001</a>
+                    </p>
+                    <p class="nombre ng-binding">Optativa de matemáticas y ciencias</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 3</p>
+                  </li>
+                </ul>
+                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaFija" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">EG1001</a>
+                    </p>
+                    <p class="nombre ng-binding">Optativa de matemáticas y ciencias</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 3</p>
+                  </li>
+                </ul>
+                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaFija" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">EG1001</a>
+                    </p>
+                    <p class="nombre ng-binding">Optativa de matemáticas y ciencias</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 3</p>
+                  </li>
+                </ul>
+                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaFija" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">EG1001</a>
+                    </p>
+                    <p class="nombre ng-binding">Optativa de matemáticas y ciencias</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 3</p>
+                  </li>
+                </ul>
+                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaFija" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">EG1001</a>
+                    </p>
+                    <p class="nombre ng-binding">Optativa de matemáticas y ciencias</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 3</p>
+                  </li>
+                </ul>
+                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaFija" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">EG1001</a>
+                    </p>
+                    <p class="nombre ng-binding">Optativa de matemáticas y ciencias</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 3</p>
+                  </li>
+                </ul>
+              </li>
+              
               <!-- ngRepeat: periodo in periodos -->
               <li class="periodoagosto-diciembre" ng-repeat="periodo in periodos" info="periodo" ingreso="ingreso">
-                <h2 class="center ng binding">AD2022</h2>
+                <h2 class="center ng binding">AD2024</h2>
+                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaFija" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">EG1001</a>
+                    </p>
+                    <p class="nombre ng-binding">Optativa de matemáticas y ciencias</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 3</p>
+                  </li>
+                </ul>
+                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaFija" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">EG1001</a>
+                    </p>
+                    <p class="nombre ng-binding">Optativa de matemáticas y ciencias</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 3</p>
+                  </li>
+                </ul>
+                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaFija" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">EG1001</a>
+                    </p>
+                    <p class="nombre ng-binding">Optativa de matemáticas y ciencias</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 3</p>
+                  </li>
+                </ul>
+                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaFija" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">EG1001</a>
+                    </p>
+                    <p class="nombre ng-binding">Optativa de matemáticas y ciencias</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 3</p>
+                  </li>
+                </ul>
+                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaFija" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">EG1001</a>
+                    </p>
+                    <p class="nombre ng-binding">Optativa de matemáticas y ciencias</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 3</p>
+                  </li>
+                </ul>
+                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaFija" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">EG1001</a>
+                    </p>
+                    <p class="nombre ng-binding">Optativa de matemáticas y ciencias</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 3</p>
+                  </li>
+                </ul>
+                <!-- ngRepeat: materia in periodo.materias -->
+                <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
+                  <li class="materiaFija" ng-repeat="materia in periodo.materas" info="materia" index="$index">
+                    <p class="clave">
+                      <a class="ng-binding" ng-click="editar()">EG1001</a>
+                    </p>
+                    <p class="nombre ng-binding">Optativa de matemáticas y ciencias</p>
+                    <p class="unidades ng-binding" ng-show="materia.unidades">U: 3</p>
+                  </li>
+                </ul>
+              </li>
+              
+              <!-- ngRepeat: periodo in periodos -->
+              <li class="periodofebrero-junio" ng-repeat="periodo in periodos" info="periodo" ingreso="ingreso">
+                <h2 class="center ng binding">FJ2025</h2>
                 <!-- ngRepeat: materia in periodo.materias -->
                 <ul class="materias ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="$root.sortableOptions" ng-model="periodo.materias">
                   <li class="materiaFija" ng-repeat="materia in periodo.materas" info="materia" index="$index">
