@@ -70,190 +70,111 @@ button{
 .Revertir-cambios:hover{
   background-color: #825F1B;
 }
-ul li { 
-  display: inline; 
-}
-ul{
-margin: 0;
-padding: 0;
-list-style-type: none;
-text-align: center;
-}
-ul.planDeEstudios {
-  display: inline-flex;
-  margin-top: 5px;
-  white-space: nowrap;
-  align-content: start;
-}
-.carousel-indicators, .planDeEstudios ul, ul.planDeEstudios {
-  list-style: none;
-}
-ul.PlanDeEstudios li{
-  display: inline-block;
-}
-h2{
-  text-align: center;
-}
-.materiaTronco, .materiaAreaEstudios, .materiaConcentracion, .materiaUltimoSemestre, .materiaFija{
-  color: white;
+body {
+      margin: 40px;
+    }
+    .container {
+      display: table;
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0 1px;
+    }
+    .row {
+      display: table-row;
+    }
+    .header-cell {
+      display: table-cell;
+      padding: 10px;
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      text-align: center;
+      border-radius: 10px 10px 10px 10px;
+      font-family: 'Arial', sans-serif;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .cell {
+      display: table-cell;
+      padding: 20px;
+
+      background-color: #f2f2f2;
+      text-align: center;
+      font-size: 20px;
+      color: rgb(255, 255, 255);
+      border-radius: 10px 10px 10px 10px;
+      font-family: 'Helvetica', sans-serif;
+      margin-bottom: 10px;
+    }
+    .Agregar-periodo,
+    .Guardar-cambios,
+    .Revertir-cambios {
+      padding: 10px 20px;
+      font-size: 20px;
+    }
+    .matricula-materia,
+    .nombre-materia,
+    .duracion,
+    .numero-unidades {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+.cell {
   border: 1px solid;
   border-color: white;
-  border-radius: 9px;
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: center;
-  min-width: 50px;
-  max-width: 100px;
 }
-.materiaTronco, .materiaFija{
-    background-color: #335CB5;
+    .matricula1 {
+      background-color: #335CB5;
+    }
+.matricula1:hover{
+  background-color: #213A72 ;
 }
-.materiaAreaEstudios{
-  background-color: #2AB77E;
+    .matricula2 {
+      background-color: #8c9093;
+    }
+.matricula2:hover{
+  background-color: #4C4E50;
 }
-.materiaConcentracion{
-  background-color: #D29B2D;
+    .matricula3 {
+      background-color: #D29B2D;
+    }
+.matricula3:hover{
+  background-color: #75571C;
 }
-.materiaUltimoSemestre{
-  background-color: #309FB6;
+    .matricula4 {
+      background-color: #B64F3D;
+    }
+.matricula4:hover{
+  background-color: #60291F;
 }
-footer{
-  background-color: #0a0a0a;
-  padding: 10px;
-  text-align: center;
-  margin-top: 20px;
+    .matricula5 {
+      background-color: #BD53BF;
+    }
+.matricula5:hover{
+  background-color: #582759;
 }
-footer p{
-  color: white;
-  font-size: 12px;
-  margin-left: 10px;
-  margin-right: 10px
+    .matricula6 {
+      background-color: #9FBE47;
+    }
+.matricula6:hover{
+  background-color: #506024;
 }
-a:link { text-decoration: none; }
-
-a:visited { text-decoration: none; }
-
-a:hover { text-decoration: none; }
-
-a:active { text-decoration: none; }header{
-  background-color: #E5E5E5;
-}
-body{
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-header a{
-  color: #7B7B7B;
-  margin-right: 5px;
-}
-header{
-  position: fixed; 
-  top: 0;
-  margin-top: 0px; 
-  width: 100%;
-  z-index: 2;
-}
-header img{
-  padding-left: 1%;
-}
-nav {float: right; 
-  margin-top: 1%; 
-  margin-right: 5%;
-  margin-left: 0px;
-}
-.selected{
-  font-weight: bold;
-  color: #333333;
-}
-h1 {
-  margin-top: 70px;
-  text-align: center;
-  color: #999999;
-  font-weight: normal;
-}
-button{
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.Agregar-periodo{
-  background-color: #27A0B7;
-  color: white;
-  border-radius: 20px;
-  border: 0px;
-  padding: 10px;
-}
-.Agregar-periodo:hover {
-  background-color: #155B68;
-}
-.Guardar-cambios{
-  background-color: #2AB77E;
-  color: white;
-  border-radius: 20px;
-  border: 0px;
-  padding: 10px;
-  float: right;
-}
-.Guardar-cambios:hover{
-  background-color: #196D4B;
-}
-.Revertir-cambios{
-  background-color: #D29B2D;
-  color: white;
-  border-radius: 20px;
-  border: 0px;
-  padding: 10px;
-  float: right;
-}
-.Revertir-cambios:hover{
-  background-color: #825F1B;
-}
-ul li { 
-  display: inline; 
-}
-ul{
-margin: 0;
-padding: 0;
-list-style-type: none;
-text-align: center;
-}
-ul.planDeEstudios {
-  display: inline-flex;
-  margin-top: 5px;
-  white-space: nowrap;
-  align-content: start;
-}
-.carousel-indicators, .planDeEstudios ul, ul.planDeEstudios {
-  list-style: none;
-}
-ul.PlanDeEstudios li{
-  display: inline-block;
-}
-h2{
-  text-align: center;
-}
-.materiaTronco, .materiaAreaEstudios, .materiaConcentracion, .materiaUltimoSemestre, .materiaFija{
-  color: white;
-  border: 1px solid;
-  border-color: white;
-  border-radius: 9px;
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: center;
-  min-width: 50px;
-  max-width: 100px;
-}
-.materiaTronco, .materiaFija{
-    background-color: #335CB5;
-}
-.materiaAreaEstudios{
-  background-color: #2AB77E;
-}
-.materiaConcentracion{
-  background-color: #D29B2D;
-}
-.materiaUltimoSemestre{
-  background-color: #309FB6;
-}
+    .matricula7 {
+      background-color: #309FB6;
+    }
+.matricula7:hover {
+      background-color: #184D58;
+    }
+    .matricula8 {
+      background-color: #2AB77E;
+    }
+.matricula8:hover {
+      background-color: #15583D;
+    }
+    .matricula9 {
+      background-color: #ffffff; 
+    }
 footer{
   background-color: #0a0a0a;
   padding: 10px;
